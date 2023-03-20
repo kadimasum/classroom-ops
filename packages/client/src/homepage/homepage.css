@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_container{
+    height: 15vh;
+    background-color: white;
+    border-bottom: 2px solid #114232;
+    width: 100%;
+    box-shadow: 0px 0px 5px #114232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_wrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_wrapper, .nav_items_wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #114232;
+    align-items: center;
+}
+
+.nav_items_wrapper a{
+    text-decoration: none;
+    color: #114232;
+}
+
+.nav_items_wrapper .signup_btn{
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #9B2423;
+    color: white;
+    border: none;
+}
+
+.nav_items_wrapper .login_btn{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid #9B2423;
+    color: #9B2423;
+}
