@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+form a{
+    text-decoration: none;
+    color: grey;
+}
+
+form div button{
+    margin-top: 20px;
+}
