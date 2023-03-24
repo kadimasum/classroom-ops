@@ -7,9 +7,9 @@
 .nav_container{
     height: 15vh;
     background-color: white;
-    border-bottom: 2px solid #114232;
+    border-bottom: 2px solid #9B2423;
     width: 100%;
-    box-shadow: 0px 0px 5px #114232;
+    /* box-shadow: 0px 0px 5px #114232; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +57,7 @@
 
 .content_section_homepage{
     height: 85vh;
+    z-index: -2;
 
 }
 
@@ -84,7 +85,7 @@
 }
 
 .content_container_right{
-    background-image: url("../../public/hero.png");
+    background-image: url("./images/hero.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
