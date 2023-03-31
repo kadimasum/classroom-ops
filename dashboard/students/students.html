@@ -26,7 +26,91 @@
 
             <h4>Logout</h4>
         </div>
-        <div class="dashboard_content_container"></div>
+
+        <!-- Dashboard content -->
+        <div class="dashboard_content_container">
+            <div class="dashboard_top">
+
+                <h2>Students</h2>   
+
+                <!-- Add Student -->
+                <button id="btn_add_new">Add New Student</button>
+            </div>
+
+                <!-- Filter -->
+            <div class="filter_container">
+
+                <!-- <h3>Filter</h3> -->
+                <div>
+                    <label for="course">Course</label>
+                    <select name="course" id="course_filter">
+                        <option value="All">All</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="DataScience">DS</option>
+                        <option value="SoftwareDevelopment">SD</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="student_status">Student Status</label>
+                    <select name="student_status" id="student_status_filter">
+                        <option value="All">All</option>
+                        <option value="inclass">In Class</option>
+                        <option value="Deferred">Deffered</option>
+                        <option value="Graduated">Graduated</option>
+                    </select>
+                </div>
+
+                <!-- Search -->
+                <form action="submit">
+                    <input type="text" placeholder="Search">
+                    <button>Go</button>
+                </form>
+                
+            </div>
+
+            <!-- Students list -->
+            
+            <table>
+                <tr>
+                    <th>Admission Number</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Classroom Status</th>
+                    <th>Finance Status</th>
+                    <th>Student Support Status</th>
+                </tr>
+                <tr>
+                    <td>MRS56</td>
+                    <td>Samuel Kadima</td>
+                    <td>Software Development (Python)</td>
+                    <td>
+                        <select name="classroom_status" id="classroom_status">
+                            <option value="inclass">In class</option>
+                            <option value="pending_graduation">Pending graduation</option>
+                            <option value="graduated">Graduated</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="finance_status" id="finance_status">
+                            <option value="cleared">Cleared</option>
+                            <option value="not_cleared">Not cleared</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="student_support_status" id="student_support_status">
+                            <option value="healthy">Healthy</option>
+                            <option value="on_support">On support</option>
+                            <option value="deffered">Deffered</option>
+                            <option value="dropped">Dropped</option>
+                        </select>
+                    </td>
+
+                </tr>
+            </table>
+
+
+        </div>
     </div>
     
 </body>
