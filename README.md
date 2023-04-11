@@ -21,3 +21,6 @@ To create the project, you will need to take the following steps:
 
 ## Starting the Project
 To start the project, you can use either nodemon index.js or node index.js.
+
+## Link ERD 
+https://dbdiagram.io/d/64187981296d97641d8954e2  :   ERD diagrams 
