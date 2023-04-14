@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="./../students/students.css">
+    <link rel="stylesheet" href="./students.css">
+</head>
+<body>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <!-- Side Bar -->
+        <div class="dashboard_side_bar_container">
+
+            <h2>ClassroomOps</h2>
+            <ul>
+                <li><a href="/students">Students</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/staff">Staff</a></li>
+                <li><a href="/marketing">Marketing</a></li>
+                <li><a href="/outcomes">Outcomes</a></li>
+           </ul>
+
+            <h4>Logout</h4>
+        </div>
+
+        <!-- Dashboard content -->
+        <div class="dashboard_content_container">
+            <div class="dashboard_top">
+
+                <h2>Staff</h2>   
+
+                <!-- Add Student -->
+                <button id="btn_add_new">Add New Staff</button>
+            </div>
+
+                <!-- Filter -->
+            <div class="filter_container">
+
+                <!-- <h3>Filter</h3> -->
+                <div>
+                    <label for="course">Department</label>
+                    <select name="course" id="course_filter">
+                        <option value="All">All</option>
+                        <option value="DevOps">Classroom</option>
+                        <option value="DataScience">Finance</option>
+                        <option value="SoftwareDevelopment">Outcomes</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="student_status">Status</label>
+                    <select name="student_status" id="student_status_filter">
+                        <option value="All">All</option>
+                        <option value="inclass">In Class</option>
+                        <option value="Deferred">Deffered</option>
+                        <option value="Graduated">Graduated</option>
+                    </select>
+                </div>
+
+                <!-- Search -->
+                <form action="submit">
+                    <input type="text" placeholder="Search">
+                    <button>Go</button>
+                </form>
+                
+            </div>
+
+            <!-- Students list -->
+            
+            <table>
+                <tr>
+                    <th>Staff Id</th>
+                    <th>Name</th>
+                    <th>Employement Type</th>
+                    <th>Department</th>
+                    <th>Employement Status</th>
+                </tr>
+                <tr>
+                    <td>MRS56</td>
+                    <td>Samuel Kadima</td>
+                    <td>Software Development (Python)</td>
+                    <td>
+                        <select name="classroom_status" id="classroom_status">
+                            <option value="inclass">In class</option>
+                            <option value="pending_graduation">Pending graduation</option>
+                            <option value="graduated">Graduated</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="finance_status" id="finance_status">
+                            <option value="cleared">Cleared</option>
+                            <option value="not_cleared">Not cleared</option>
+                        </select>
+                    </td>
+        
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
