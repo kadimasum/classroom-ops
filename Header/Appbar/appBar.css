@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* About Hero */
+
+.about_hero_container{
+    height: auto;
+    width: 100%;
+}
+
+.about_hero_image_wrapper{
+    width: 100%;
+    height: 60vh;
+    background-image: url("./../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_hero_content{
+    background-color: #114232;
+    height: auto;
+    padding: 60px 0px;
+}
+
+.about_hero_content_wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    color: white;
+}
+
+.about_hero_content_wrapper h2{
+    margin-bottom: 20px;
+}
+
+/* About Our Team */
+
+.about_our_team_container{
+    width: 100%;
+    height: auto;
+    padding: 60px 0px;
+}
+
+.about_our_team_wrapper{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    margin: 0px auto;
+}
+
+.about_our_team_wrapper h2{
+    margin-bottom: 20px;
+    color: #114232;
+}
+
+.team_cards_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_card{
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.team_member_photo_wrapper{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #114232;
+    margin-bottom: 10px;
+}
+
+.team_card p{
+    color: gray;
+    font-size: 14px;
+}
