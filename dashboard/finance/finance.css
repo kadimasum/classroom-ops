@@ -61,3 +61,10 @@
     color: white;
     cursor: pointer;
 }
+
+
+/*Dashboard Main section */
+
+#dashboardMainContent {
+    margin-left: 10cm;
+}
