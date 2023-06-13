@@ -43,7 +43,8 @@
             <td>${data[i].last_name}</td>
             <td>${data[i].student_email}</td>
             <td>${data[i].student_contact}</td>
-            
+            <td><a href="#" class="btn btn-success">Edit</a></td>
+            <td><a href="#" class="btn  btn-danger">Delete</a></td>
           `;
 
           table.appendChild(row);
